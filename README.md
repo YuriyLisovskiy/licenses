@@ -1,5 +1,11 @@
 ## Open source licenses templates
 
+Pull requests are welcome. See [contributing](../.github/CONTRIBUTING.md)
+and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
+<hr>
+
+### Available licenses:
+
 #### Apache
 * `apache-2.0` - Apache License Version 2.0
 
@@ -25,9 +31,7 @@
 
 #### Unlicense
 * `unlicense` - Unlicense"
-
-Pull requests are welcome. See [contributing](../.github/CONTRIBUTING.md)
-and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
+<hr>
 
 ### Authors
 * API - [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy)

@@ -4,6 +4,8 @@
 ```
 $ pip install pyoslapi
 ```
+> Currently not added to PyPi
+
 ### Usage
 
 An example how to get a license from https://github.com/YuriyLisovskiy/licenses:

@@ -1,0 +1,32 @@
+matrix:
+  include:
+  - language: go
+    sudo: false
+    go:
+      - "1"
+      - "1.1"
+      - "1.2"
+      - "1.3"
+      - "1.4"
+      - "1.5"
+      - "1.6"
+      - "1.7"
+      - "1.8"
+      - "1.9"
+      - "1.10"
+      - "1.x"
+    env:
+      - "PATH=/home/travis/gopath/bin:$PATH"
+    before_script:
+      - echo $PATH
+      - echo $GOPATH
+      - go version
+      - go env
+      - go get -v -t ./api/golang/...
+      - go get github.com/mattn/goveralls
+    script:
+      - go test -v -timeout 1h -covermode=count -coverprofile=./api/golang/coverage.out ./api/golang
+      - goveralls -coverprofile=./api/golang/coverage.out -service travis-ci
+
+notifications:
+  email: false

@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"encoding/json"
 	"encoding/base64"
+	"errors"
 )
 
 // Represents simple client for getting a license.
@@ -37,6 +38,9 @@ func (Client) GetLicense(name string) (License, error) {
 	}
 
 	// Decode license content using base64 encoding.
+	if response.Content == nil {
+		return license, errors.New("content is nil")
+	}
 	decoded, err := base64.StdEncoding.DecodeString(*response.Content)
 	if err != nil {
 		return license, err

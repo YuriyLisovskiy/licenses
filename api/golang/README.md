@@ -1,4 +1,6 @@
 ### Golang Open Source Licenses API
+[![Coverage Status](https://coveralls.io/repos/github/YuriyLisovskiy/licenses/badge.svg)](https://coveralls.io/github/YuriyLisovskiy/licenses)
+[![Build Status](https://travis-ci.org/YuriyLisovskiy/licenses.svg?branch=master)](https://travis-ci.org/YuriyLisovskiy/licenses)
 
 ### Installation
 ```

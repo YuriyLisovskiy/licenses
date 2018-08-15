@@ -1,5 +1,6 @@
 # Demo files
 demo.*
 
-# Local IDE content
+# Local
 .idea/
+*.html

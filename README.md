@@ -47,8 +47,8 @@ and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
 <hr>
 
 ### Authors
-* API - [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy)
-* Licenses:
+* [API](https://github.com/YuriyLisovskiy/licenses/tree/master/api) - [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy)
+* [Licenses](https://github.com/YuriyLisovskiy/licenses/tree/master/licenses):
     * https://opensource.org
     * https://www.gnu.org
     * http://unlicense.org

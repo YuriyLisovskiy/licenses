@@ -1,7 +1,7 @@
 ## Open source licenses templates
 
 ### Table of Contents
-- [Available licenses](#available-licenses:)
+- [Available licenses](#available-licenses)
     * [Apache](#apache)
     * [BSD](#bsd)
     * [Eclipse](#eclipse)

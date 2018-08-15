@@ -1,2 +1,5 @@
 # Demo files
 demo.*
+
+# Local IDE content
+.idea/

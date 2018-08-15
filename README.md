@@ -9,6 +9,7 @@
     * [MIT](#mit)
     * [Mozilla](#mozilla)
     * [Unlicense](#unlicense)
+- [Projects that use licenses](#other-projects-using-[licenses](https://github.com/yuriylisovskiy/licenses))
 - [Authors](#authors)
 - [Help author](#donations)
 - [License](#license)
@@ -45,6 +46,14 @@ and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
 #### Unlicense
 * [`unlicense`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/unlicense) - Unlicense"
 <hr>
+
+### Other projects using [licenses](https://github.com/YuriyLisovskiy/licenses)
+
+Below is a list of public, open source projects that use [licenses](https://github.com/YuriyLisovskiy/licenses):
+* [lfp](https://github.com/YuriyLisovskiy/lfp) - Tool for easy adding the license to your project.
+
+If you are using [licenses](https://github.com/YuriyLisovskiy/licenses) in a project please send
+a pull request to add it to the list.
 
 ### Authors
 * [API](https://github.com/YuriyLisovskiy/licenses/tree/master/api) - [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy)

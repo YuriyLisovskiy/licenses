@@ -1,5 +1,18 @@
 ## Open source licenses templates
 
+### Table of Contents
+- [Available licenses](#available-licenses:)
+    * [Apache](#apache)
+    * [BSD](#bsd)
+    * [Eclipse](#eclipse)
+    * [GNU](#gnu)
+    * [MIT](#mit)
+    * [Mozilla](#mozilla)
+    * [Unlicense](#unlicense)
+- [Authors](#authors)
+- [Help author](#donations)
+- [License](#license)
+
 Pull requests are welcome. See [contributing](../.github/CONTRIBUTING.md)
 and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
 <hr>

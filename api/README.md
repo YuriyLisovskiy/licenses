@@ -5,4 +5,5 @@ manual downloading or copying it from
 [licenses](https://github.com/YuriyLisovskiy/licenses/tree/master/licenses).
 
 Available APIs:
-* [golang](golang)
+* [golang-api](golang)
+* [python-api](python)

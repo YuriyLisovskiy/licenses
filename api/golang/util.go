@@ -4,11 +4,6 @@
 
 package golang
 
-import (
-	"fmt"
-	"errors"
-)
-
 const (
 	// Base url for www.gnu.org/licenses web page.
 	gnuOrg = "https://www.gnu.org/licenses/"
@@ -57,7 +52,7 @@ func licenseData(key string) (name string, link string, err error) {
 		name = "Unlicense"
 		link = "http://unlicense.org"
 	default:
-		err = errors.New(fmt.Sprintf("license '%s' does not exist", key))
+		err = ErrLicenseNotFound
 	}
 	return
 }

@@ -7,10 +7,10 @@ package golang
 // Represents content response from https://github.com/YuriyLisovskiy/licenses repository.
 type licenseResponse struct {
 	// Encoded license content.
-	Content *string `json:"content,omitempty"`
+	Content string `json:"content,omitempty"`
 
 	// Content encoding
-	Encoding *string `json:"encoding,omitempty"`
+	Encoding string `json:"encoding,omitempty"`
 }
 
 // Represents downloaded license.

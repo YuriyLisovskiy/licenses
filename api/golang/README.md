@@ -1,6 +1,13 @@
 ### Golang Open Source Licenses API
 
+### Installation
+```
+$ go get github.com/YuriyLisovskiy/licenses/api/golang
+```
+### Usage
+
 An example how to get a license from https://github.com/YuriyLisovskiy/licenses:
+
 ```go
 package main
 

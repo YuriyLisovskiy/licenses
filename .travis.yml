@@ -29,16 +29,16 @@ matrix:
       - goveralls -coverprofile=./api/golang/coverage.out -service travis-ci
 
   - language: python
-     sudo: false
-     python:
-       - 3.5
-       - 3.6
-     install:
-       - pip install -r ./api/python/requirements.txt
-     script:
-       - coverage run ./api/python/tests.py
-     after_success:
-       - coveralls
+    sudo: false
+    python:
+      - 3.5
+      - 3.6
+    install:
+      - pip install -r ./api/python/requirements.txt
+    script:
+      - coverage run ./api/python/tests.py
+    after_success:
+      - coveralls
 
 notifications:
   email: false

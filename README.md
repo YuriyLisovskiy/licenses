@@ -9,7 +9,7 @@
     * [MIT](#mit)
     * [Mozilla](#mozilla)
     * [Unlicense](#unlicense)
-- [Projects that use licenses](#other-projects-using-[licenses](https://github.com/yuriylisovskiy/licenses))
+- [Projects that use licenses](#other-projects-using-licenses)
 - [Authors](#authors)
 - [Help author](#donations)
 - [License](#license)

@@ -70,6 +70,41 @@ class UtilTest(TestCase):
 			'expected_name': 'Unlicense',
 			'expected_link': 'http://unlicense.org',
 		},
+		{
+			'input': 'aal',
+			'expected_name': 'Attribution Assurance License',
+			'expected_link': OPEN_SOURCE_ORG + 'AAL',
+		},
+		{
+			'input': 'afl-3.0',
+			'expected_name': 'Academic Free License 3.0',
+			'expected_link': OPEN_SOURCE_ORG + 'AFL-3.0',
+		},
+		{
+			'input': 'apsl-2.0',
+			'expected_name': 'Apple Public Source License 2.0',
+			'expected_link': 'https://opensource.apple.com/apsl',
+		},
+		{
+			'input': 'artistic-2.0',
+			'expected_name': 'Artistic License 2.0',
+			'expected_link': OPEN_SOURCE_ORG + 'Artistic-2.0',
+		},
+		{
+			'input': 'bsl-1.0',
+			'expected_name': 'Boost Software License 1.0',
+			'expected_link': OPEN_SOURCE_ORG + 'BSL-1.0',
+		},
+		{
+			'input': 'catosl-1.1',
+			'expected_name': 'Computer Associates Trusted Open Source License 1.1',
+			'expected_link': OPEN_SOURCE_ORG + 'CATOSL-1.1',
+		},
+		{
+			'input': 'cecill-2.1',
+			'expected_name': 'CeCILL License 2.1',
+			'expected_link': OPEN_SOURCE_ORG + 'CECILL-2.1',
+		},
 	]
 	
 	def test_license_data(self):

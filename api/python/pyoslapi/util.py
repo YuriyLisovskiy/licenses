@@ -46,6 +46,27 @@ def license_data(key):
 	elif key == 'unlicense':
 		name = 'Unlicense'
 		link = 'http://unlicense.org'
+	elif key == 'aal':
+		name = 'Attribution Assurance License'
+		link = OPEN_SOURCE_ORG + 'AAL'
+	elif key == 'afl-3.0':
+		name = 'Academic Free License 3.0'
+		link = OPEN_SOURCE_ORG + 'AFL-3.0'
+	elif key == 'apsl-2.0':
+		name = 'Apple Public Source License 2.0'
+		link = 'https://opensource.apple.com/apsl'
+	elif key == 'artistic-2.0':
+		name = 'Artistic License 2.0'
+		link = OPEN_SOURCE_ORG + 'Artistic-2.0'
+	elif key == 'bsl-1.0':
+		name = 'Boost Software License 1.0'
+		link = OPEN_SOURCE_ORG + 'BSL-1.0'
+	elif key == 'catosl-1.1':
+		name = 'Computer Associates Trusted Open Source License 1.1'
+		link = OPEN_SOURCE_ORG + 'CATOSL-1.1'
+	elif key == 'cecill-2.1':
+		name = 'CeCILL License 2.1'
+		link = OPEN_SOURCE_ORG + 'CECILL-2.1'
 	else:
 		raise LICENSE_NOT_FOUND
 	return name, link

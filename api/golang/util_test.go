@@ -71,6 +71,41 @@ var licenseData_TestData = []struct {
 		expectedName: "Unlicense",
 		expectedLink: "http://unlicense.org",
 	},
+	{
+		input:        "aal",
+		expectedName: "Attribution Assurance License",
+		expectedLink: openSourceOrg + "AAL",
+	},
+	{
+		input:        "afl-3.0",
+		expectedName: "Academic Free License 3.0",
+		expectedLink: openSourceOrg + "AFL-3.0",
+	},
+	{
+		input:        "apsl-2.0",
+		expectedName: "Apple Public Source License 2.0",
+		expectedLink: "https://opensource.apple.com/apsl",
+	},
+	{
+		input:        "artistic-2.0",
+		expectedName: "Artistic License 2.0",
+		expectedLink: openSourceOrg + "Artistic-2.0",
+	},
+	{
+		input:        "bsl-1.0",
+		expectedName: "Boost Software License 1.0",
+		expectedLink: openSourceOrg + "BSL-1.0",
+	},
+	{
+		input:        "catosl-1.1",
+		expectedName: "Computer Associates Trusted Open Source License 1.1",
+		expectedLink: openSourceOrg + "CATOSL-1.1",
+	},
+	{
+		input:        "cecill-2.1",
+		expectedName: "CeCILL License 2.1",
+		expectedLink: openSourceOrg + "CECILL-2.1",
+	},
 }
 
 func Test_licenseData(test *testing.T) {

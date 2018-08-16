@@ -1,0 +1,12 @@
+# .coveragerc to control coverage.py
+
+[run]
+
+source =
+    ./api/python/pyoslapi
+
+omit =
+    *__init__.py*
+
+[html]
+    directory = ./api/python/coverage

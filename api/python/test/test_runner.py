@@ -4,4 +4,4 @@
 
 
 def run_tests():
-	pass
+	print('Tests ran.')

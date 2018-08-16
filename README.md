@@ -2,13 +2,9 @@
 
 ### Table of Contents
 - [Available licenses](#available-licenses)
-    * [Apache](#apache)
-    * [BSD](#bsd)
-    * [Eclipse](#eclipse)
-    * [GNU](#gnu)
-    * [MIT](#mit)
-    * [Mozilla](#mozilla)
-    * [Unlicense](#unlicense)
+    - [BSD](#bsd)
+    - [GNU](#gnu)
+    - [Other](#other)
 - [Projects that use licenses](#other-projects-using-licenses)
 - [Authors](#authors)
 - [Help author](#donations)
@@ -20,15 +16,9 @@ and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
 
 ### Available licenses:
 
-#### Apache
-* [`apache-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apache-2.0) - Apache License Version 2.0
-
 #### BSD
 * [`bsd-2-clause`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsd-2-clause) - BSD 2-Clause License
 * [`bsd-3-clause`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsd-3-clause) - BSD 3-Clause License
-
-#### Eclipse
-* [`epl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/epl-2.0) - Eclipse Public License - v2.0
 
 #### GNU
 * [`gpl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/gpl-2.0) - GNU General Public License v2.0
@@ -37,14 +27,20 @@ and [opening issues](../.github/ISSUE_TEMPLATE.md) for details.
 * [`lgpl-2.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/lgpl-2.1) - GNU Lesser General Public License v2.1
 * [`lgpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/lgpl-3.0) - GNU Lesser General Public License v3.0
 
-#### MIT
+#### Other
+* [`aal`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/aal) - Attribution Assurance License
+* [`afl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/afl-3.0) - Academic Free License 3.0
+* [`apache-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apache-2.0) - Apache License Version 2.0
+* [`apsl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apsl-2.0) - Apple Public Source License 2.0
+* [`artistic-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/artistic-2.0) - Artistic License 2.0
+* [`bsl-1.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsl-1.0) - Boost Software License 1.0
+* [`catosl-1.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/catosl-1.1) - Computer Associates Trusted Open Source License 1.1
+* [`cecill-2.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cecill-2.1) - CeCILL License 2.1
+* [`epl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/epl-2.0) - Eclipse Public License - v2.0
 * [`mit`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/mit) - MIT License
-
-#### Mozilla
 * [`mpl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/mpl-2.0) - Mozilla Public License Version 2.0
+* [`unlicense`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/unlicense) - Unlicense
 
-#### Unlicense
-* [`unlicense`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/unlicense) - Unlicense"
 <hr>
 
 ### Other projects using [licenses](https://github.com/YuriyLisovskiy/licenses)

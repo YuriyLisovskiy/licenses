@@ -25,4 +25,4 @@ test-python:
 
 clean:
 	@rm -rf ./api/golang/$(COVER_OUT) ./api/golang/coverage.html
-	@rm -rf ./api/python/.coverage ./api/python/coverage/
+	@rm -rf ./api/python/.coverage ./api/python/coverage/ .coverage

@@ -5,7 +5,7 @@
 BASE_URL = 'https://api.github.com/repos/YuriyLisovskiy/licenses/contents/licenses'
 
 # Base url for www.gnu.org/licenses web page.
-GNU_ORG = "https://www.gnu.org/licenses/"
+GNU_ORG = 'https://www.gnu.org/licenses/'
 
 # Base url for opensource.org/licenses web page.
-OPEN_SOURCE_ORG = "https://opensource.org/licenses/"
+OPEN_SOURCE_ORG = 'https://opensource.org/licenses/'

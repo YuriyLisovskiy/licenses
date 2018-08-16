@@ -77,3 +77,9 @@ class UtilTest(TestCase):
 			actual_name, actual_link = license_data(item['input'])
 			self.assertEqual(actual_name, item['expected_name'])
 			self.assertEqual(actual_link, item['expected_link'])
+	
+	def test_license_data_type_error(self):
+		self.assertRaises(TypeError, license_data, 10)
+		
+	def test_license_data_value_error(self):
+		self.assertRaises(ValueError, license_data, 'some-license')

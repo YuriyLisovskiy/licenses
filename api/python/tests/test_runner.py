@@ -7,7 +7,9 @@ import unittest
 from . import unittest as test
 
 test_modules = [
-	test.__name__ + '.test_util'
+	test.__name__ + '.test_util',
+	test.__name__ + '.test_client',
+	test.__name__ + '.test_license'
 ]
 
 

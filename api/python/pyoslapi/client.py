@@ -39,6 +39,6 @@ class Client:
 					# Get license name and source link by its keyword.
 					l_name, l_link = license_data(name)
 					return License(name=l_name, link=l_link, content=decoded_data.decode('utf-8'))
+			return None
 		elif response.status_code == 404:
 			raise LICENSE_NOT_FOUND
-		return None

@@ -103,6 +103,43 @@ func Test_GetLicense(test *testing.T) {
 	}
 }
 
+var GetHeader_TestData = []struct {
+	input    string
+	expected string
+}{
+	{
+		input: "gpl-3.0",
+		expected: `<program name>
+{{Copyright (c) <year> <author>}}
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.`,
+	},
+}
+
+func Test_GetHeader(test *testing.T) {
+	client := Client{}
+	for _, data := range GetHeader_TestData {
+		actual, _ := client.GetHeader(data.input)
+		if actual != data.expected {
+			test.Errorf(
+				"client_test.Test_GetHeader:\n\tactual name -> %s\n is not equal to\n\texpected name -> %s",
+				actual, data.expected,
+			)
+		}
+	}
+}
+
 var GetLicenseErr_TestData = struct {
 	input string
 }{

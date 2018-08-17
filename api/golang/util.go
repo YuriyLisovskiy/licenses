@@ -1,8 +1,16 @@
 // Copyright (c) 2018 Yuriy Lisovskiy
+//
 // Distributed under the MIT software license, see the accompanying
 // file LICENSE or https://opensource.org/licenses/MIT
 
 package golang
+
+import (
+	"net/http"
+	"io/ioutil"
+	"encoding/json"
+	"encoding/base64"
+)
 
 const (
 	// Base url for www.gnu.org/licenses web page.
@@ -76,4 +84,34 @@ func licenseData(key string) (name string, link string, err error) {
 		err = ErrLicenseNotFound
 	}
 	return
+}
+
+func downloadContent(url string) ([]byte, error) {
+	var ret []byte
+
+	// Download content from https://github.com/YuriyLisovskiy/licenses
+	resp, err := http.Get(url)
+	if err != nil {
+		return ret, err
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return ret, err
+	}
+
+	// Decode response.
+	var response licenseResponse
+	err = json.Unmarshal(body, &response)
+	if err != nil {
+		return ret, err
+	}
+
+	// Decode license content using base64 encoding.
+	decoded, err := base64.StdEncoding.DecodeString(response.Content)
+	if err != nil {
+		return ret, err
+	}
+	ret = decoded
+	return decoded, nil
 }

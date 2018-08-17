@@ -1,43 +1,19 @@
 // Copyright (c) 2018 Yuriy Lisovskiy
+//
 // Distributed under the MIT software license, see the accompanying
 // file LICENSE or https://opensource.org/licenses/MIT
 
 package golang
 
-import (
-	"net/http"
-	"io/ioutil"
-	"encoding/json"
-	"encoding/base64"
-)
-
 // Represents simple client for getting a license.
 type Client struct{}
 
-// Downloads license from https://github.com/YuriyLisovskiy/licenses repository.
+// Downloads the license from https://github.com/YuriyLisovskiy/licenses repository.
 func (Client) GetLicense(name string) (License, error) {
 	var license License
 
-	// Download license from https://github.com/YuriyLisovskiy/licenses/licenses
-	resp, err := http.Get(baseUrl + "/" + name)
-	if err != nil {
-		return license, err
-	}
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return license, err
-	}
-
-	// Decode response.
-	var response licenseResponse
-	err = json.Unmarshal(body, &response)
-	if err != nil {
-		return license, err
-	}
-
-	// Decode license content using base64 encoding.
-	decoded, err := base64.StdEncoding.DecodeString(response.Content)
+	// Download the license.
+	licenseContent, err := downloadContent(baseUrl + "/licenses/" + name)
 	if err != nil {
 		return license, err
 	}
@@ -51,6 +27,15 @@ func (Client) GetLicense(name string) (License, error) {
 	// Setup license data.
 	license.name = lName
 	license.link = lLink
-	license.content = string(decoded)
+	license.content = string(licenseContent)
 	return license, nil
+}
+
+// Downloads the header from https://github.com/YuriyLisovskiy/licenses repository.
+func (Client) GetHeader(name string) (string, error) {
+	header, err := downloadContent(baseUrl + "/headers/" + name + "-header")
+	if err != nil {
+		return "", err
+	}
+	return string(header), nil
 }

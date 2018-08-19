@@ -42,3 +42,12 @@ func (Client) GetHeader(name string) (string, error) {
 	}
 	return string(header), nil
 }
+
+// Downloads list of available licenses.
+func (Client) GetList() (string, error) {
+	list, err := downloadContent(baseUrl + "/LICENSE-LIST")
+	if err != nil {
+		return "", err
+	}
+	return string(list), nil
+}

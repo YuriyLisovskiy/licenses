@@ -29,14 +29,14 @@ func main()  {
 	
 	header, err := client.GetHeader("apache-2.0")
 	if err != nil {
-    	panic(err)
-    }
-    fmt.Printf("Header: %s", header)
+		panic(err)
+	}
+	fmt.Printf("Header: %s", header)
 	
 	list, err := client.GetList()
 	if err != nil {
-       	panic(err)
-    }
-    fmt.Printf("List: %s", list)
+		panic(err)
+	}
+	fmt.Printf("List: %s", list)
 }
 ```

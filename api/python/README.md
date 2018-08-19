@@ -23,11 +23,11 @@ if __name__ == '__main__':
 		)
 	
 	header = client.get_header('apache-2.0')
-    	if header is not None:
-    		print("Header: {}".format(header))
-    		
-    license_list = client.get_list()
-    	if license_list is not None:
-    		print("License List: {}".format(license_list))
+		if header is not None:
+			print("Header: {}".format(header))
+			
+	license_list = client.get_list()
+		if license_list is not None:
+			print("License List: {}".format(license_list))
 
 ```

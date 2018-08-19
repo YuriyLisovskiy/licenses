@@ -8,8 +8,7 @@ $ pip install pyoslapi
 
 ### Usage
 
-An example how to get a license from https://github.com/YuriyLisovskiy/licenses:
-
+Example:
 ```py
 from pyoslapi.client import Client
 
@@ -22,5 +21,13 @@ if __name__ == '__main__':
 				license.name, license.link, license.content
 			)
 		)
+	
+	header = client.get_header('apache-2.0')
+    	if header is not None:
+    		print("Header: {}".format(header))
+    		
+    license_list = client.get_list()
+    	if license_list is not None:
+    		print("License List: {}".format(license_list))
 
 ```

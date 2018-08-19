@@ -6,8 +6,7 @@ $ go get github.com/YuriyLisovskiy/licenses/api/golang
 ```
 ### Usage
 
-An example how to get a license from https://github.com/YuriyLisovskiy/licenses:
-
+Example:
 ```go
 package main
 
@@ -27,5 +26,17 @@ func main()  {
 		"Name: %s\nLink: %s\nContent:\n%s\n",
 		license.Name(), license.Link(), license.Content(),
 	)
+	
+	header, err := client.GetHeader("apache-2.0")
+	if err != nil {
+    	panic(err)
+    }
+    fmt.Printf("Header: %s", header)
+	
+	list, err := client.GetList()
+	if err != nil {
+       	panic(err)
+    }
+    fmt.Printf("List: %s", list)
 }
 ```

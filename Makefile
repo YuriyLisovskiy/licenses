@@ -6,22 +6,13 @@ COVER_OUT = coverage.out
 
 all: clean test
 
-test: test-golang test-python
+test: gotest pytest
 
-test-golang:
-	@echo Running golang api tests...
-	@go test -v -timeout 1h -covermode=count -coverprofile=./api/golang/$(COVER_OUT) ./api/golang
-	@echo Generating coverage report for golang api...
-	@go tool cover -html ./api/golang/$(COVER_OUT) -o ./api/golang/coverage.html
-	@echo Done
+gotest:
+	@bash ./scripts/test-go.sh
 
-test-python:
-	@echo Running python api tests...
-	@coverage run ./api/python/tests.py
-	@coverage report
-	@echo Generating coverage report for python api...
-	@coverage html -d ./api/python/coverage/
-	@echo Done.
+pytest:
+	@bash ./scripts/test-py.sh
 
 clean:
 	@rm -rf ./api/golang/$(COVER_OUT) ./api/golang/coverage.html

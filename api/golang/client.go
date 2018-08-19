@@ -35,6 +35,9 @@ func (Client) GetLicense(name string) (License, error) {
 func (Client) GetHeader(name string) (string, error) {
 	header, err := downloadContent(baseUrl + "/headers/" + name + "-header")
 	if err != nil {
+		if err == ErrContentHotFound {
+			return "", ErrHeaderNotFound
+		}
 		return "", err
 	}
 	return string(header), nil

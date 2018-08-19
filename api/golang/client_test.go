@@ -157,3 +157,21 @@ func Test_GetLicenseErr(test *testing.T) {
 		)
 	}
 }
+
+var GetHeaderErr_TestData = struct {
+	input string
+}{
+	input: "some-license",
+}
+
+func Test_GetHeaderErr(test *testing.T) {
+	client := Client{}
+	data := GetLicenseErr_TestData
+	_, err := client.GetHeader(data.input)
+	if err == nil {
+		test.Errorf(
+			"client_test.Test_GetHeaderErr:\n\tfunc does not return an error for input: %s",
+			data.input,
+		)
+	}
+}

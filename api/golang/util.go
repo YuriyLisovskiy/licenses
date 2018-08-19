@@ -113,5 +113,8 @@ func downloadContent(url string) ([]byte, error) {
 		return ret, err
 	}
 	ret = decoded
+	if len(ret) == 0 {
+		return ret, ErrContentHotFound
+	}
 	return decoded, nil
 }

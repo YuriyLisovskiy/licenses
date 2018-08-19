@@ -40,6 +40,9 @@ func (Client) GetHeader(name string) (string, error) {
 		}
 		return "", err
 	}
+	if len(header) == 0 {
+		return "", ErrHeaderNotFound
+	}
 	return string(header), nil
 }
 

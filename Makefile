@@ -9,10 +9,10 @@ all: clean test
 test: gotest pytest
 
 gotest:
-	@bash ./scripts/test-go.sh
+	@bash ./scripts/test-go-api.sh
 
 pytest:
-	@bash ./scripts/test-py.sh
+	@bash ./scripts/test-py-api.sh
 
 clean:
 	@rm -rf ./api/golang/$(COVER_OUT) ./api/golang/coverage.html

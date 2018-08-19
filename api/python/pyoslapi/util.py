@@ -2,6 +2,10 @@
 # Distributed under the MIT software license, see the accompanying
 # file LICENSE or https://opensource.org/licenses/MIT
 
+import json
+import base64
+import requests
+
 from .consts import GNU_ORG, OPEN_SOURCE_ORG
 from .errors import TYPE_ERROR, LICENSE_NOT_FOUND
 
@@ -70,3 +74,26 @@ def license_data(key):
 	else:
 		raise LICENSE_NOT_FOUND
 	return name, link
+
+
+def download_content(url):
+	
+	# Check if url is of type string.
+	if not isinstance(url, str):
+		return TYPE_ERROR
+	
+	# Download content from https://github.com/YuriyLisovskiy/licenses.
+	response = requests.get(url)
+	if response.status_code == 200:
+
+		# Decode response.
+		json_data = json.loads(response.text)
+		content = json_data.get('content')
+		if content is not None:
+	
+			# Decode content using base64 encoding.
+			decoded_data = base64.b64decode(content)
+			return decoded_data
+		return None
+	elif response.status_code == 404:
+		raise LICENSE_NOT_FOUND

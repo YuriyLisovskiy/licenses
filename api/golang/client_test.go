@@ -166,12 +166,53 @@ var GetHeaderErr_TestData = struct {
 
 func Test_GetHeaderErr(test *testing.T) {
 	client := Client{}
-	data := GetLicenseErr_TestData
+	data := GetHeaderErr_TestData
 	_, err := client.GetHeader(data.input)
 	if err == nil {
 		test.Errorf(
 			"client_test.Test_GetHeaderErr:\n\tfunc does not return an error for input: %s",
 			data.input,
+		)
+	}
+}
+
+var GetList_TestData = struct {
+	expected string
+}{
+	expected: `BSD
+  'bsd-2-clause' - BSD 2-Clause License
+  'bsd-3-clause' - BSD 3-Clause License
+
+GNU
+  'gpl-2.0' - GNU General Public License v2.0
+  'gpl-3.0' - GNU General Public License v3.0
+  'agpl-3.0' - GNU Affero General Public License v3.0
+  'lgpl-2.1' - GNU Lesser General Public License v2.1
+  'lgpl-3.0' - GNU Lesser General Public License v3.0
+
+Other
+  'aal' - Attribution Assurance License
+  'afl-3.0' - Academic Free License 3.0
+  'apache-2.0' - Apache License Version 2.0
+  'apsl-2.0' - Apple Public Source License 2.0
+  'artistic-2.0' - Artistic License 2.0
+  'bsl-1.0' - Boost Software License 1.0
+  'catosl-1.1' - Computer Associates Trusted Open Source License 1.1
+  'cecill-2.1' - CeCILL License 2.1
+  'epl-2.0' - Eclipse Public License - v2.0
+  'mit' - MIT License
+  'mpl-2.0' - Mozilla Public License Version 2.0
+  'unlicense' - Unlicense`,
+}
+
+func Test_GetList(test *testing.T) {
+	client := Client{}
+	data := GetList_TestData
+	actual, _ := client.GetList()
+	if actual != data.expected {
+		test.Errorf(
+			"client_test.Test_GetList:\n\tactual list -> %s\n is not equal to\n\texpected list -> %s",
+			actual, data.expected,
 		)
 	}
 }

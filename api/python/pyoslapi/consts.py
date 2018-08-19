@@ -2,7 +2,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file LICENSE or https://opensource.org/licenses/MIT
 
-BASE_URL = 'https://api.github.com/repos/YuriyLisovskiy/licenses/contents/licenses'
+BASE_URL = 'https://api.github.com/repos/YuriyLisovskiy/licenses/contents'
 
 # Base url for www.gnu.org/licenses web page.
 GNU_ORG = 'https://www.gnu.org/licenses/'

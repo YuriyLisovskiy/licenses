@@ -3,7 +3,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file LICENSE or https://opensource.org/licenses/MIT
 
-package golang
+package oslapi
 
 import (
 	"net/http"

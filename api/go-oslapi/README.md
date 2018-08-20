@@ -2,7 +2,7 @@
 
 ### Installation
 ```
-$ go get github.com/YuriyLisovskiy/licenses/api/golang
+$ go get github.com/YuriyLisovskiy/licenses/api/go-oslapi
 ```
 ### Usage
 
@@ -13,11 +13,11 @@ package main
 import (
 	"fmt"
 	
-	"github.com/YuriyLisovskiy/licenses/api/golang"
+	"github.com/YuriyLisovskiy/licenses/api/go-oslapi"
 )
 
 func main()  {
-	client := golang.Client{}
+	client := oslapi.Client{}
 	license, err := client.GetLicense("apache-2.0")
 	if err != nil {
 		panic(err)

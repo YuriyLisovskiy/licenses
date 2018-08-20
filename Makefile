@@ -6,14 +6,22 @@ COVER_OUT = coverage.out
 
 all: clean test
 
-test: gotest pytest
+test: go-test py-test
 
-gotest:
+go-test:
 	@bash ./scripts/test-go-api.sh
 
-pytest:
+py-test:
 	@bash ./scripts/test-py-api.sh
 
+deploy-py-api:
+	rm -rf ./api/py-oslapi/build/ ./api/py-oslapi/pyoslapi.egg-info/ ./api/py-oslapi/dist/
+	python3 -m pip install --user --upgrade setuptools wheel
+	python3 ./api/py-oslapi/setup.py sdist bdist_wheel
+	python3 -m pip install --user --upgrade twine
+	twine upload ./api/py-oslapi/dist/*
+
 clean:
-	@rm -rf ./api/golang/$(COVER_OUT) ./api/golang/coverage.html
-	@rm -rf ./api/python/.coverage ./api/python/coverage/ .coverage
+	@rm -rf ./api/py-oslapi/build/ ./api/py-oslapi/pyoslapi.egg-info/ ./api/py-oslapi/dist/
+	@rm -rf ./api/go-oslapi/$(COVER_OUT) ./api/go-oslapi/coverage.html
+	@rm -rf ./api/py-oslapi/.coverage ./api/py-oslapi/coverage/ .coverage

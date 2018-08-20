@@ -9,10 +9,10 @@ all: clean test
 test: go-test py-test
 
 go-test:
-	bash ./scripts/test-go-api.sh
+	@bash ./scripts/test-go-api.sh
 
 py-test:
-	bash ./scripts/test-py-api.sh
+	@bash ./scripts/test-py-api.sh
 
 deploy-py-api:
 	python3 -m pip install --user --upgrade setuptools wheel

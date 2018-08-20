@@ -1,10 +1,12 @@
 ### Python Open Source Licenses API
 
+An API which allows you to get license templates or license notices from your
+code.
+
 ### Installation
 ```
 $ pip install pyoslapi
 ```
-> Currently not added to PyPi
 
 ### Usage
 

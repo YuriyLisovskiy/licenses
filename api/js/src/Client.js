@@ -1,5 +1,12 @@
+// Copyright (c) 2018 Yuriy Lisovskiy
+//
+// Distributed under the MIT software license, see the accompanying
+// file LICENSE or https://opensource.org/licenses/MIT
+
+// Base GitHub API url of contents path on https://github.com/YuriyLisovskiy/licenses repository.
 const BASE_URL = 'https://api.github.com/repos/YuriyLisovskiy/licenses/contents';
 
+// Downloads content from given url.
 function downloadContent(url, ret) {
 	let xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function()
@@ -16,14 +23,20 @@ function downloadContent(url, ret) {
 	xhr.send();
 }
 
+// Parses json content and decode license text.
 function parseContent(response) {
 	return atob(JSON.parse(response)['content']);
 }
 
+// Determines license name and link by given license name.
 function licenseData(l_name, handler) {
 	let name = '';
 	let link = '';
+
+    // Base url for www.gnu.org/licenses web page.
 	let gnuOrg = 'https://www.gnu.org/licenses/';
+
+    // Base url for opensource.org/licenses web page.
 	let openSourceOrg = 'https://opensource.org/licenses/';
 	switch (l_name) {
 		case "bsd-2-clause":
@@ -108,6 +121,7 @@ function licenseData(l_name, handler) {
 	handler(name, link);
 }
 
+// Represents downloaded license.
 class License {
 
     constructor(name, link, content) {
@@ -116,19 +130,24 @@ class License {
         this._content = content;
     }
 
-    name() {
+    // Returns license title.
+    title() {
         return this._name;
     }
 
+    // Returns license source link.
     link() {
         return this._link;
     }
 
+    // Returns license content.
     content() {
         return this._content;
     }
 }
 
+// Represents simple client for getting content
+// from https://github.com/YuriyLisovskiy/licenses.
 class Client {
 
 	constructor() {
@@ -137,21 +156,25 @@ class Client {
 		Client.prototype.listHandler = function() {};
 	}
 
+	// Sets header handler function.
 	setHeaderHandler(func) {
 		Client.prototype.headerHandler = func;
 	   return this;
 	}
 
+	// Sets license handler function.
 	setLicenseHandler(func) {
 		Client.prototype.licenseHandler = func;
 		return this;
 	}
 
+	// Sets list handler function.
 	setListHandler(func) {
 		Client.prototype.listHandler = func;
 		return this;
 	}
 
+    // Downloads the license.
 	getLicense(l_name) {
 		downloadContent(BASE_URL + '/licenses/' + l_name, function (response) {
 			let content = parseContent(response);
@@ -161,12 +184,14 @@ class Client {
 		});
 	}
 
+    // Downloads the header.
 	getHeader(l_name) {
 		downloadContent(BASE_URL + '/headers/' + l_name + '-header', function (response) {
 			Client.prototype.headerHandler(parseContent(response));
 		});
 	}
 
+    // Downloads list of available licenses.
 	getList() {
 		downloadContent(BASE_URL + '/LICENSE-LIST', function (response) {
 			Client.prototype.listHandler(parseContent(response));

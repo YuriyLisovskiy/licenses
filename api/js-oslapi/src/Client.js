@@ -76,11 +76,11 @@ function licenseData(l_name, handler) {
 			break;
 		case "aal":
 			name = "Attribution Assurance License";
-			link = "https://opensource.org/licenses/AAL";
+			link = openSourceOrg + "AAL";
 			break;
 		case "afl-3.0":
 			name = "Academic Free License 3.0";
-			link = "https://opensource.org/licenses/AFL-3.0";
+			link = openSourceOrg + "AFL-3.0";
 			break;
 		case "apsl-2.0":
 			name = "Apple Public Source License 2.0";
@@ -88,19 +88,19 @@ function licenseData(l_name, handler) {
 			break;
 		case "artistic-2.0":
 			name = "Artistic License 2.0";
-			link = "https://opensource.org/licenses/Artistic-2.0";
+			link = openSourceOrg + "Artistic-2.0";
 			break;
 		case "bsl-1.0":
 			name = "Boost Software License 1.0";
-			link = "https://opensource.org/licenses/BSL-1.0";
+			link = openSourceOrg + "BSL-1.0";
 			break;
 		case "catosl-1.1":
 			name = "Computer Associates Trusted Open Source License 1.1";
-			link = "https://opensource.org/licenses/CATOSL-1.1";
+			link = openSourceOrg + "CATOSL-1.1";
 			break;
 		case "cecill-2.1":
 			name = "CeCILL License 2.1";
-			link = "https://opensource.org/licenses/CECILL-2.1";
+			link = openSourceOrg + "CECILL-2.1";
 			break;
 		default:
 			throw new Error('license not found');

@@ -22,11 +22,11 @@ matrix:
       - echo $GOPATH
       - go version
       - go env
-      - go get -v -t ./api/go-oslapi/...
+      - go get -v -t ./api/go/...
       - go get github.com/mattn/goveralls
     script:
-      - go test -v -timeout 1h -covermode=count -coverprofile=./api/go-oslapi/coverage.out ./api/go-oslapi
-      - goveralls -coverprofile=./api/go-oslapi/coverage.out -service travis-ci
+      - go test -v -timeout 1h -covermode=count -coverprofile=./api/go/coverage.out ./api/go
+      - goveralls -coverprofile=./api/go/coverage.out -service travis-ci
 
   - language: python
     sudo: false

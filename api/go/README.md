@@ -2,7 +2,7 @@
 
 ### Installation
 ```
-$ go get github.com/YuriyLisovskiy/licenses/api/go-oslapi
+$ go get github.com/YuriyLisovskiy/licenses/api/go
 ```
 ### Usage
 
@@ -13,7 +13,7 @@ package main
 import (
 	"fmt"
 	
-	"github.com/YuriyLisovskiy/licenses/api/go-oslapi"
+	"github.com/YuriyLisovskiy/licenses/api/go"
 )
 
 func main()  {
@@ -24,7 +24,7 @@ func main()  {
 	}
 	fmt.Printf(
 		"Name: %s\nLink: %s\nContent:\n%s\n",
-		license.Name(), license.Link(), license.Content(),
+		license.Title(), license.Link(), license.Content(),
 	)
 	
 	header, err := client.GetHeader("apache-2.0")

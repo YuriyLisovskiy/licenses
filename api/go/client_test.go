@@ -13,7 +13,7 @@ var GetLicense_TestData = []struct {
 	{
 		input: "mit",
 		expected: License{
-			name: "MIT License",
+			title: "MIT License",
 			link: "https://opensource.org/licenses/MIT",
 			content: `MIT License
 
@@ -42,7 +42,7 @@ SOFTWARE.
 	{
 		input: "bsd-3-clause",
 		expected: License{
-			name: "BSD 3-Clause License",
+			title: "BSD 3-Clause License",
 			link: "https://opensource.org/licenses/BSD-3-Clause",
 			content: `BSD 3-Clause License
 
@@ -82,10 +82,10 @@ func Test_GetLicense(test *testing.T) {
 	client := Client{}
 	for _, data := range GetLicense_TestData {
 		actual, _ := client.GetLicense(data.input)
-		if actual.Name() != data.expected.Name() {
+		if actual.Title() != data.expected.Title() {
 			test.Errorf(
-				"client_test.Test_GetLicense:\n\tactual name -> %s\n is not equal to\n\texpected name -> %s",
-				actual.Name(), data.expected.Name(),
+				"client_test.Test_GetLicense:\n\tactual title -> %s\n is not equal to\n\texpected title -> %s",
+				actual.Title(), data.expected.Title(),
 			)
 		}
 		if actual.Link() != data.expected.Link() {

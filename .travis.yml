@@ -22,11 +22,11 @@ matrix:
       - echo $GOPATH
       - go version
       - go env
-      - go get -v -t ./api/golang/...
+      - go get -v -t ./api/go-oslapi/...
       - go get github.com/mattn/goveralls
     script:
-      - go test -v -timeout 1h -covermode=count -coverprofile=./api/golang/coverage.out ./api/golang
-      - goveralls -coverprofile=./api/golang/coverage.out -service travis-ci
+      - go test -v -timeout 1h -covermode=count -coverprofile=./api/go-oslapi/coverage.out ./api/go-oslapi
+      - goveralls -coverprofile=./api/go-oslapi/coverage.out -service travis-ci
 
   - language: python
     sudo: false
@@ -34,9 +34,9 @@ matrix:
       - 3.5
       - 3.6
     install:
-      - pip install -r ./api/python/requirements.txt
+      - pip install -r ./api/py-oslapi/requirements.txt
     script:
-      - coverage run ./api/python/tests.py
+      - coverage run ./api/py-oslapi/tests.py
     after_success:
       - coveralls
 

@@ -22,5 +22,5 @@ deploy-py-api:
 
 clean:
 	rm -rf ./build/ ./pyoslapi.egg-info/ ./api/py-oslapi/dist/ ./dist/
-	rm -rf ./api/go-oslapi/$(COVER_OUT) ./api/go-oslapi/coverage.html
+	rm -rf ./api/go/$(COVER_OUT) ./api/go/coverage.html
 	rm -rf ./api/py-oslapi/.coverage ./api/py-oslapi/coverage/ .coverage

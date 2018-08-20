@@ -15,8 +15,8 @@ type licenseResponse struct {
 
 // Represents downloaded license.
 type License struct {
-	// License full name.
-	name string
+	// License title.
+	title string
 
 	// License source link.
 	link string
@@ -25,9 +25,9 @@ type License struct {
 	content string
 }
 
-// Returns license full name.
-func (self License) Name() string {
-	return self.name
+// Returns license title.
+func (self License) Title() string {
+	return self.title
 }
 
 // Returns license source link.

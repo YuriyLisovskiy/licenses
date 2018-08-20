@@ -19,13 +19,13 @@ func (Client) GetLicense(name string) (License, error) {
 	}
 
 	// Get license name and source link by its keyword.
-	lName, lLink, err := licenseData(name)
+	lTitle, lLink, err := licenseData(name)
 	if err != nil {
 		return license, err
 	}
 
 	// Setup license data.
-	license.name = lName
+	license.title = lTitle
 	license.link = lLink
 	license.content = string(licenseContent)
 	return license, nil

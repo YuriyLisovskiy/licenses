@@ -82,9 +82,9 @@ a pull request to add it to the list.
 
     | Language | Author |
     | --- | --- |
-    | Go | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
-    | JavaScript | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
-    | Python | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    | [Go](https://github.com/YuriyLisovskiy/licenses/tree/master/api/go) | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    | [JavaScript](https://github.com/YuriyLisovskiy/licenses/tree/master/api/js) | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    | [Python](https://github.com/YuriyLisovskiy/licenses/tree/master/api/py) | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
     
 * [Licenses](https://github.com/YuriyLisovskiy/licenses/tree/master/licenses):
     * https://www.gnu.org

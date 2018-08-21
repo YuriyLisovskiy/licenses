@@ -18,42 +18,54 @@ and [opening issues](.github/ISSUE_TEMPLATE.md) for details.
 ### Available licenses:
 
 #### BSD
-* [`bsd-2-clause`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsd-2-clause) - BSD 2-Clause License
-* [`bsd-3-clause`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsd-3-clause) - BSD 3-Clause License
+
+| Key name | License full name |
+| --- | --- |
+| [`bsd-2-clause`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsd-2-clause) | BSD 2-Clause License |
+| [`bsd-3-clause`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsd-3-clause) | BSD 3-Clause License |
 
 #### Creative Commons:
-* [`cc0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc0) - CC0 1.0 Universal
-* [`cc-by`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by) - Attribution 3.0 Unported
-* [`cc-by-nc`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nc) - Attribution-NonCommercial 3.0 Unported
-* [`cc-by-nc-nd`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nc-nd) - Attribution-NonCommercial-NoDerivs 3.0 Unported
-* [`cc-by-nc-sa`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nc-sa) - Attribution-NonCommercial-ShareAlike 3.0 Unported 
-* [`cc-by-nd`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nd) - Attribution-NoDerivs 3.0 Unported
-* [`cc-by-sa`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-sa) - Attribution-ShareAlike 3.0 Unported
+
+| Key name | License full name |
+| --- | --- |
+| [`cc0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc0) | CC0 1.0 Universal |
+| [`cc-by`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by) | Attribution 3.0 Unported |
+| [`cc-by-nc`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nc) | Attribution-NonCommercial 3.0 Unported |
+| [`cc-by-nc-nd`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nc-nd) | Attribution-NonCommercial-NoDerivs 3.0 Unported |
+| [`cc-by-nc-sa`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nc-sa) | Attribution-NonCommercial-ShareAlike 3.0 Unported |
+| [`cc-by-nd`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-nd) | Attribution-NoDerivs 3.0 Unported |
+| [`cc-by-sa`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cc-by-sa) | Attribution-ShareAlike 3.0 Unported |
 
 #### GNU
-* [`gpl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/gpl-2.0) - GNU General Public License v2.0
-* [`gpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/gpl-3.0) - GNU General Public License v3.0
-* [`agpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/agpl-3.0) - GNU Affero General Public License v3.0
-* [`lgpl-2.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/lgpl-2.1) - GNU Lesser General Public License v2.1
-* [`lgpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/lgpl-3.0) - GNU Lesser General Public License v3.0
+
+| Key name | License full name |
+| --- | --- |
+| [`gpl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/gpl-2.0) | GNU General Public License v2.0 |
+| [`gpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/gpl-3.0) | GNU General Public License v3.0 |
+| [`agpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/agpl-3.0) | GNU Affero General Public License v3.0 |
+| [`lgpl-2.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/lgpl-2.1) | GNU Lesser General Public License v2.1 |
+| [`lgpl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/lgpl-3.0) | GNU Lesser General Public License v3.0 |
 
 #### Other
-* [`aal`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/aal) - Attribution Assurance License
-* [`afl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/afl-3.0) - Academic Free License 3.0
-* [`apache-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apache-2.0) - Apache License Version 2.0
-* [`apsl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apsl-2.0) - Apple Public Source License 2.0
-* [`artistic-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/artistic-2.0) - Artistic License 2.0
-* [`bsl-1.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsl-1.0) - Boost Software License 1.0
-* [`catosl-1.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/catosl-1.1) - Computer Associates Trusted Open Source License 1.1
-* [`cddl-1.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cddl-1.0) - COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0
-* [`cecill-2.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cecill-2.1) - CeCILL License 2.1
-* [`epl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/epl-2.0) - Eclipse Public License - v2.0
-* [`mit`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/mit) - MIT License
-* [`mpl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/mpl-2.0) - Mozilla Public License Version 2.0
-* [`unlicense`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/unlicense) - Unlicense
-* [`wtfpl`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/wtfpl) - DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2
-* [`x11`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/x11) - X11
-* [`zlib`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/zlib) - ZLIB
+
+| Key name | License full name |
+| --- | --- |
+| [`aal`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/aal) | Attribution Assurance License |
+| [`afl-3.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/afl-3.0) | Academic Free License 3.0 |
+| [`apache-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apache-2.0) | Apache License Version 2.0 |
+| [`apsl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/apsl-2.0) | Apple Public Source License 2.0 |
+| [`artistic-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/artistic-2.0) | Artistic License 2.0 |
+| [`bsl-1.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/bsl-1.0) | Boost Software License 1.0 |
+| [`catosl-1.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/catosl-1.1) | Computer Associates Trusted Open Source License 1.1 |
+| [`cddl-1.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cddl-1.0) | COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 |
+| [`cecill-2.1`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/cecill-2.1) | CeCILL License 2.1 |
+| [`epl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/epl-2.0) | Eclipse Public License - v2.0 |
+| [`mit`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/mit) | MIT License |
+| [`mpl-2.0`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/mpl-2.0) | Mozilla Public License Version 2.0 |
+| [`unlicense`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/unlicense) | Unlicense |
+| [`wtfpl`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/wtfpl) | DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2 |
+| [`x11`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/x11) | X11 |
+| [`zlib`](https://github.com/YuriyLisovskiy/licenses/blob/master/licenses/zlib) | ZLIB |
 
 <hr>
 
@@ -66,7 +78,14 @@ If you are using [licenses](https://github.com/YuriyLisovskiy/licenses) in a pro
 a pull request to add it to the list.
 
 ### Authors
-* [API](https://github.com/YuriyLisovskiy/licenses/tree/master/api) - [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy)
+* [API](https://github.com/YuriyLisovskiy/licenses/tree/master/api):
+
+    | Language | Author |
+    | --- | --- |
+    | Go | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    | JavaScript | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    | Python | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    
 * [Licenses](https://github.com/YuriyLisovskiy/licenses/tree/master/licenses):
     * https://www.gnu.org
     * http://unlicense.org

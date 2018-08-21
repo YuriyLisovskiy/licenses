@@ -1,5 +1,8 @@
 ### Golang Open Source Licenses API
 
+An API which allows you to get license templates or license notices from your
+code.
+
 ### Installation
 ```
 $ go get github.com/YuriyLisovskiy/licenses/api/go

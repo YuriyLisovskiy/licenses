@@ -8,5 +8,5 @@ manual downloading or copying it from
 
 Available APIs:
 * [Go](go)
-* [JavaScript] (js)
+* [JavaScript](js)
 * [Python](py)

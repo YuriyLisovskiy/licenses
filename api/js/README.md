@@ -4,32 +4,44 @@ An API which allows you to get license templates or license notices from your
 JavaScript code.
 
 ### Installation
-// TODO: add installation guide.
+```bash
+$ npm install oslapi
+```
 
 ### Usage
 
-Get list of available licenses:
-```javascript
-let client = new Client();
-client.setListHandler(function (list) {
-    console.log(list);
-}).getList();
-```
+Example:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="list">A list</p>
+    <p id="header">A header</p>
+    <p id="license">A license</p>
+</body>
+<script src="path/to/oslapi.js"></script>
+<script>
 
-Get header:
-```javascript
-let client = new Client();
-client.setHeaderHandler(function (header) {
-    console.log(header);
-}).getHeader('gpl-3.0');
-```
+    let client = new Client();
+    
+    client.setListHandler(function (list) {
+        console.log(list);
+    }).getList();
+    
+    client.setHeaderHandler(function (header) {
+        console.log(header);
+    }).getHeader('gpl-3.0');
 
-Get license:
-```javascript
-let client = new Client();
-client.setLicenseHandler(function (license) {
-    console.log(license.name());
-    console.log(license.link());
-    console.log(license.content());
-}).getLicense('mit');
+    client.setLicenseHandler(function (license) {
+        console.log(license.title());
+        console.log(license.link());
+        console.log(license.content());
+    }).getLicense('mit');
+
+</script>
+</html>
 ```

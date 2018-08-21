@@ -16,11 +16,11 @@ py-test:
 
 deploy-py-api:
 	python3 -m pip install --user --upgrade setuptools wheel
-	python3 ./api/py-oslapi/setup.py sdist bdist_wheel -d ./api/py-oslapi/dist/
+	python3 ./api/py/setup.py sdist bdist_wheel -d ./api/py/dist/
 	python3 -m pip install --user --upgrade twine
-	twine upload ./api/py-oslapi/dist/*
+	twine upload ./api/py/dist/*
 
 clean:
-	rm -rf ./build/ ./pyoslapi.egg-info/ ./api/py-oslapi/dist/ ./dist/
+	rm -rf ./build/ ./pyoslapi.egg-info/ ./api/py/dist/ ./dist/
 	rm -rf ./api/go/$(COVER_OUT) ./api/go/coverage.html
-	rm -rf ./api/py-oslapi/.coverage ./api/py-oslapi/coverage/ .coverage
+	rm -rf ./api/py/.coverage ./api/py/coverage/ .coverage

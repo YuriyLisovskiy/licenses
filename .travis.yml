@@ -34,9 +34,9 @@ matrix:
       - 3.5
       - 3.6
     install:
-      - pip install -r ./api/py-oslapi/requirements.txt
+      - pip install -r ./api/py/requirements.txt
     script:
-      - coverage run ./api/py-oslapi/tests.py
+      - coverage run ./api/py/tests.py
     after_success:
       - coveralls
 

@@ -7,5 +7,6 @@ manual downloading or copying it from
 [licenses](https://github.com/YuriyLisovskiy/licenses/tree/master/licenses).
 
 Available APIs:
-* [Go](go-oslapi)
-* [Python](py-oslapi)
+* [Go](go)
+* [JavaScript] (js)
+* [Python](py)

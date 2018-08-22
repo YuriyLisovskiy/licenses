@@ -1,6 +1,6 @@
 {
   "name": "oslapi",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An API which allows you to get license templates or license notices from your JavaScript code.",
   "author": "Yuriy Lisovskiy <yuralisovskiy98@gmail.com>",
   "license": "MIT",

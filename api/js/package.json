@@ -9,7 +9,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "*"
   },
   "scripts": {
     "test": "mocha"

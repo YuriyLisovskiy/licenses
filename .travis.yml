@@ -31,8 +31,8 @@ matrix:
   - language: python
     sudo: false
     python:
-      - 3.5
-      - 3.6
+      - "3.5"
+      - "3.6"
     install:
       - pip install -r ./api/py/requirements.txt
     script:
@@ -41,12 +41,13 @@ matrix:
       - coveralls
 
   - language: node_js
+    sudo: false
     node_js:
-      - "4.0"
-      - "4.1"
-      - "4.x"
-    script:
+      - "7.0"
+      - "7.x"
+    install:
       - npm --prefix ./api/js/ install
+    script:
       - npm --prefix ./api/js/ test
 
 notifications:

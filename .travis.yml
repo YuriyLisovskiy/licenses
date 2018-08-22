@@ -45,6 +45,7 @@ matrix:
       - "iojs"
       - "7"
     script:
+      - npm --prefix ./api/js/ install
       - npm --prefix ./api/js/ test
 
 notifications:

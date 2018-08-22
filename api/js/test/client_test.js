@@ -1,9 +1,9 @@
-let assert = require('assert');
-let oslapi = require('../src/oslapi');
+var assert = require('assert');
+var oslapi = require('../src/oslapi');
 
 describe('Client', function () {
     it('Should return license', function () {
-        let client = new oslapi.Client();
+        var client = new oslapi.Client();
         client.setLicenseHandler(function (license) {
             assert.equal(`BSD 2-Clause License
 
@@ -33,7 +33,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         }).getLicense('bsd-2-clause');
     });
     it('Should return header', function () {
-        let client = new oslapi.Client();
+        var client = new oslapi.Client();
         client.setHeaderHandler(function (header) {
             assert.equal(`{{<program name> by <author>}}
 
@@ -46,7 +46,7 @@ work.  If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.`, header
         }).getHeader('cc0-header');
     });
     it('Should return list', function () {
-        let client = new oslapi.Client();
+        var client = new oslapi.Client();
         client.setListHandler(function (list) {
             assert.equal(`BSD:
  'bsd-2-clause'  - BSD 2-Clause License

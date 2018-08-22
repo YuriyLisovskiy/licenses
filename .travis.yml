@@ -40,5 +40,12 @@ matrix:
     after_success:
       - coveralls
 
+  - language: node_js
+    node_js:
+      - "iojs"
+      - "7"
+    script:
+      - npm --prefix ./api/js/ test
+
 notifications:
   email: false

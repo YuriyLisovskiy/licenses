@@ -6,13 +6,16 @@ COVER_OUT = coverage.out
 
 all: clean test
 
-test: go-test py-test
+test: go-test py-test js-test
 
 go-test:
 	@bash ./scripts/test-go-api.sh
 
 py-test:
 	@bash ./scripts/test-py-api.sh
+
+js-test:
+	@bash ./scripts/test-js-api.sh
 
 deploy-py-api:
 	python3 -m pip install --user --upgrade setuptools wheel

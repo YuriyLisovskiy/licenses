@@ -3,6 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file LICENSE or https://opensource.org/licenses/MIT
 
+let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
 // Base GitHub API url of contents path on https://github.com/YuriyLisovskiy/licenses repository.
 const BASE_URL = 'https://api.github.com/repos/YuriyLisovskiy/licenses/contents';
 
@@ -198,3 +200,5 @@ class Client {
         });
     }
 }
+
+module.exports = {Client: Client};

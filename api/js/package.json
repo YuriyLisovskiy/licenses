@@ -3,5 +3,15 @@
   "version": "0.0.1",
   "description": "An API which allows you to get license templates or license notices from your JavaScript code.",
   "author": "Yuriy Lisovskiy <yuralisovskiy98@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "requirejs": "^2.3.5",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }

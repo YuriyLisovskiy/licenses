@@ -9,3 +9,6 @@ GNU_ORG = 'https://www.gnu.org/licenses/'
 
 # Base url for opensource.org/licenses web page.
 OPEN_SOURCE_ORG = 'https://opensource.org/licenses/'
+
+# Base url for https://creativecommons.org/licenses web page.
+CC_ORG = 'https://creativecommons.org/licenses/'

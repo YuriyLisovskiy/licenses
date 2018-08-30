@@ -6,8 +6,8 @@ import json
 import base64
 import requests
 
-from .consts import GNU_ORG, OPEN_SOURCE_ORG
 from .errors import TYPE_ERROR, LICENSE_NOT_FOUND
+from .consts import GNU_ORG, OPEN_SOURCE_ORG, CC_ORG
 
 
 # Returns license name and link by given license key.
@@ -71,6 +71,42 @@ def license_data(key):
 	elif key == 'cecill-2.1':
 		name = 'CeCILL License 2.1'
 		link = OPEN_SOURCE_ORG + 'CECILL-2.1'
+	elif key ==	'cc-by-nc':
+		name = 'Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
+		link = CC_ORG + 'by-nc/4.0'
+	elif key == 'cc-by-nc-nd':
+		name = 'Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)'
+		link = CC_ORG + 'by-nc-nd/4.0'
+	elif key == 'cc-by-nc-sa':
+		name = 'Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)'
+		link = CC_ORG + 'by-nc-sa/4.0'
+	elif key == 'cc-by-nd':
+		name = 'Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)'
+		link = CC_ORG + 'by-nd/4.0'
+	elif key == 'cc-by-sa':
+		name = 'Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)'
+		link = CC_ORG + 'by-sa/4.0'
+	elif key == 'cc-by':
+		name = 'Attribution 4.0 International (CC BY 4.0)'
+		link = CC_ORG + 'by/4.0'
+	elif key == 'cc0':
+		name = 'CC0 1.0 Universal (CC0 1.0)'
+		link = CC_ORG + 'zero/1.0'
+	elif key == 'cddl-1.0':
+		name = 'Common Development and Distribution License 1.0'
+		link = OPEN_SOURCE_ORG + 'CDDL-1.0'
+	elif key == 'isc':
+		name = 'ISC License'
+		link = OPEN_SOURCE_ORG + 'ISC'
+	elif key == 'wtfpl':
+		name = 'DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE, Version 2'
+		link = 'http://www.wtfpl.net'
+	elif key == 'x11':
+		name = 'X11 License'
+		link = 'https://spdx.org/licenses/X11.html'
+	elif key == 'zlib':
+		name = 'The zlib/libpng License'
+		link = OPEN_SOURCE_ORG + 'ZLIB'
 	else:
 		raise LICENSE_NOT_FOUND
 	return name, link

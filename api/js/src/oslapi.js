@@ -40,6 +40,10 @@ function licenseData(l_name, handler) {
 
     // Base url for opensource.org/licenses web page.
     let openSourceOrg = 'https://opensource.org/licenses/';
+
+    // Base url for https://creativecommons.org/licenses web page
+    let ccOrg = "https://creativecommons.org/licenses/";
+
     switch (l_name) {
         case "bsd-2-clause":
             name = "BSD 2-Clause License";
@@ -117,6 +121,54 @@ function licenseData(l_name, handler) {
             name = "CeCILL License 2.1";
             link = openSourceOrg + "CECILL-2.1";
             break;
+	    case "cc-by-nc":
+		    name = "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)";
+		    link = ccOrg + "by-nc/4.0";
+		    break;
+	    case "cc-by-nc-nd":
+		    name = "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)";
+		    link = ccOrg + "by-nc-nd/4.0";
+		    break;
+	    case "cc-by-nc-sa":
+		    name = "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)";
+		    link = ccOrg + "by-nc-sa/4.0";
+		    break;
+	    case "cc-by-nd":
+		    name = "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)";
+		    link = ccOrg + "by-nd/4.0";
+		    break;
+	    case "cc-by-sa":
+		    name = "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)";
+		    link = ccOrg + "by-sa/4.0";
+		    break;
+	    case "cc-by":
+		    name = "Attribution 4.0 International (CC BY 4.0)";
+		    link = ccOrg + "by/4.0";
+		    break;
+	    case "cc0":
+		    name = "CC0 1.0 Universal (CC0 1.0)";
+		    link = ccOrg + "zero/1.0";
+		    break;
+	    case "cddl-1.0":
+		    name = "Common Development and Distribution License 1.0";
+		    link = openSourceOrg + "CDDL-1.0";
+		    break;
+	    case "isc":
+		    name = "ISC License";
+		    link = openSourceOrg + "ISC";
+		    break;
+	    case "wtfpl":
+		    name = "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE, Version 2";
+		    link = "http://www.wtfpl.net";
+		    break;
+	    case "x11":
+		    name = "X11 License";
+		    link = "https://spdx.org/licenses/X11.html";
+		    break;
+	    case "zlib":
+		    name = "The zlib/libpng License";
+		    link = openSourceOrg + "ZLIB";
+		    break;
         default:
             throw new Error('license not found');
     }

@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name="pyoslapi",
-    version="0.0.2",
+    version="1.0.0",
     author="Yuriy Lisovskiy",
     author_email="yuralisovskiy98@gmail.com",
     description="An API which allows you to get license templates or license notices from your code",

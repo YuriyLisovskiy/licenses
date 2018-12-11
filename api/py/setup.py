@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/YuriyLisovskiy/licenses/tree/master/api/py-oslapi",
     packages=setuptools.find_packages(exclude=['tests', 'tests.unittest']),
-    install_requires=['requests==2.19.1'],
+    install_requires=['requests>=2.20.0'],
     
     classifiers=[
         "Programming Language :: Python :: 3",

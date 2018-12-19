@@ -79,12 +79,7 @@ a pull request to add it to the list.
 
 ### Authors
 * [API](https://github.com/YuriyLisovskiy/licenses/tree/master/api):
-
-    | Language | Author |
-    | --- | --- |
-    | [Go](https://github.com/YuriyLisovskiy/licenses/tree/master/api/go) | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
-    | [JavaScript](https://github.com/YuriyLisovskiy/licenses/tree/master/api/js) | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
-    | [Python](https://github.com/YuriyLisovskiy/licenses/tree/master/api/py) | [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy) |
+    * [Yuriy Lisovskiy](https://github.com/YuriyLisovskiy)
     
 * [Licenses](https://github.com/YuriyLisovskiy/licenses/tree/master/licenses):
     * https://www.gnu.org
